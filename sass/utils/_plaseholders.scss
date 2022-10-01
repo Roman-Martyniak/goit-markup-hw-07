@@ -1,0 +1,61 @@
+%container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+%list {
+  text-decoration: none;
+}
+
+%section {
+  padding: 94px 0;
+  background-color: $header-bg-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+%box {
+  display: flex;
+}
+
+%hero {
+  width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+%link {
+  color: $primary-text-color;
+  list-style-type: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+%visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+%hidden-visually {
+  opacity: 0;
+}
+
+%is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}

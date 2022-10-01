@@ -1,0 +1,157 @@
+/* .contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.contacts__contact-item {
+  display: flex;
+}
+
+.contacts__contacts-link {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto";
+  font-style: normal;
+  color: $title-text-color;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  margin-right: 50px;
+
+  &:hover {
+    color: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform, color, opacity, background-color;
+  }
+
+  &:focus {
+    color: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform, color, opacity, background-color;
+  }
+}
+.contacts__contact-item {
+  &:hover {
+    color: $accent-color;
+    fill: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform, color, opacity, background-color;
+  }
+
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform, color, opacity, background-color;
+  }
+}
+
+.contacts__contacts-icon {
+  fill: #757575;
+  margin-right: 10px;
+
+  &:hover {
+    fill: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform, color, opacity, background-color;
+  }
+
+  &:focus {
+    fill: $accent-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform, color, opacity, background-color;
+  }
+} */
+.contacts {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+
+  &__contact-item {
+    display: flex;
+
+    &:hover {
+      color: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+
+    &:focus {
+      fill: $accent-color;
+      color: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+  }
+
+  &__contacts-link {
+    display: flex;
+    align-items: center;
+    font-family: "Roboto";
+    font-style: normal;
+    color: $title-text-color;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    margin-right: 50px;
+
+    &:hover {
+      fill: $accent-color;
+      color: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+
+    &:focus,
+    &:focus svg {
+      color: $accent-color;
+      fill: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+  }
+
+  &__contacts-icon {
+    fill: #757575;
+    margin-right: 10px;
+
+    &:hover {
+      fill: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+
+    &::before,
+    &:focus {
+      fill: $accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+      transition-property: transform, color, opacity, background-color;
+    }
+  }
+}
+
+.contact-item:focus a,
+.contact-item:focus svg {
+  color: $accent-color;
+  fill: $accent-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform, color, opacity, background-color;
+}
