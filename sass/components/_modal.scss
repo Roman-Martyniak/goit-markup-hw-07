@@ -122,26 +122,6 @@
     border-color: #2196f3;
   }
 
-  /* &:focus svg {
-    color: #2196f3;
-    fill: $accent-color;    
-    outline: $accent-color;
-    border: 1px solid $accent-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: transform, color, opacity, background-color;
-  }
-
-  &:focus input {
-    outline: $accent-color;
-    color: $accent-color;
-    border: 1px solid $accent-color;
-    border-radius: 4px;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: transform, color, opacity, background-color;
-  } */
-
   &__modal-input {
     width: 448px;
     height: 40px;
@@ -161,10 +141,7 @@
       border-color: #2196f3;
     }
   }
-  /* &__modal-input svg:focus {
-    color: #2196f3;
-    fill: #2196f3;
-  } */
+  
   &__modal-icon {
     position: absolute;
     left: 16px;
@@ -211,20 +188,14 @@
       transition-property: transform, color, opacity, background-color;
     }
 
-    /* &::after {
-      border: 1px solid #2196f3;
-    } */
+    
   }
 }
 
 .modal-check-box {
   padding-left: 52px;
   position: relative;
-  /* .modal-check:checked + & {
-    background-color: $accent-color;
-    border-color: $accent-color;
-    fill: $header-bg-color;
-  } */
+ 
 
   &__check-box {
     display: flex;
@@ -265,12 +236,7 @@
     opacity: 1;
   }
 
-  /*  &__modal-check:checked + &__check-text-span {
-     background-color: $accent-color;
-     border-color: $accent-color;
-     fill: $header-bg-color;
-     opacity: 1;
-  } */
+  
 }
 
 /* .modal-check:checked + .check-text-span {
